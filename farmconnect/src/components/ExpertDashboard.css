@@ -1,0 +1,298 @@
+.expert-dashboard {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.expert-header {
+  margin-bottom: 2rem;
+}
+
+.expert-title {
+  color: rgb(37 99 235);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.expert-subtitle {
+  color: rgb(75 85 99);
+}
+
+.expert-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.expert-stat-card {
+  padding-top: 1.5rem;
+}
+
+.expert-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.expert-stat-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.expert-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.expert-blue { color: rgb(37 99 235); }
+.expert-green { color: rgb(22 163 74); }
+.expert-purple { color: rgb(147 51 234); }
+.expert-orange { color: rgb(234 88 12); }
+
+.expert-stat-label {
+  color: rgb(75 85 99);
+  font-size: 0.875rem;
+}
+
+.expert-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.expert-tabs-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.expert-tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.expert-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.expert-create-button {
+  background-color: rgb(37 99 235);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.expert-create-button:hover {
+  background-color: rgb(29 78 216);
+}
+
+.expert-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.expert-content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.expert-create-form {
+  background-color: rgb(239 246 255);
+  border-color: rgb(191 219 254);
+}
+
+.expert-form-title {
+  font-size: 1.125rem;
+}
+
+.expert-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.expert-form-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.expert-submit-button {
+  background-color: rgb(37 99 235);
+}
+
+.expert-submit-button:hover {
+  background-color: rgb(29 78 216);
+}
+
+.expert-content-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.expert-content-item {
+  transition: box-shadow 0.2s;
+}
+
+.expert-content-item:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.expert-content-item-body {
+  padding-top: 1.5rem;
+}
+
+.expert-content-info {
+  flex: 1;
+}
+
+.expert-content-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.expert-content-title {
+  font-weight: 500;
+}
+
+.expert-badges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.expert-published {
+  background-color: rgb(220 252 231);
+  color: rgb(22 101 52);
+}
+
+.expert-review {
+  background-color: rgb(254 243 199);
+  color: rgb(154 52 18);
+}
+
+.expert-content-stats {
+  display: flex;
+  gap: 1rem;
+  color: rgb(75 85 99);
+  font-size: 0.875rem;
+}
+
+.expert-content-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.expert-questions-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.expert-questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.expert-question-card {
+  background-color: rgb(240 253 244);
+  border-color: rgb(187 247 208);
+}
+
+.expert-question-body {
+  padding-top: 1.5rem;
+}
+
+.expert-question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.expert-question-farmer {
+  font-weight: 500;
+}
+
+.expert-question-text {
+  color: rgb(55 65 81);
+  margin-bottom: 0.75rem;
+}
+
+.expert-question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.expert-answer-button {
+  background-color: rgb(22 163 74);
+  align-self: flex-start;
+}
+
+.expert-answer-button:hover {
+  background-color: rgb(21 128 61);
+}
+
+.expert-achievements-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.expert-achievements-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .expert-achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* .expert-achievement-card intentionally omitted (no styles currently required) */
+
+.expert-achievement-earned {
+  background-color: rgb(250 245 255);
+  border-color: rgb(233 213 255);
+}
+
+.expert-achievement-body {
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.expert-achievement-icon {
+  font-size: 2rem;
+}
+
+.expert-achievement-title {
+  font-weight: 500;
+  color: rgb(107 33 168);
+  margin-bottom: 0.25rem;
+}
+
+.expert-achievement-desc {
+  color: rgb(75 85 99);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.expert-earned-badge {
+  background-color: rgb(147 51 234);
+  color: white;
+}

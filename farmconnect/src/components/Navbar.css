@@ -1,0 +1,216 @@
+.navbar {
+  background-color: var(--card);
+  box-shadow: 0 6px 18px -10px rgb(0 0 0 / 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.navbar-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .navbar-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-container {
+    padding: 0 2rem;
+  }
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.25rem;
+  gap: 1rem;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(22 163 74);
+}
+
+.logo-text {
+  font-weight: 800;
+  font-size: 1.125rem;
+  color: var(--heading);
+}
+
+.nav-links-desktop {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .nav-links-desktop {
+    display: flex;
+  }
+}
+
+.nav-link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.15s, color 0.15s, transform 0.12s;
+  color: rgba(0,0,0,0.8);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  transform: translateY(-1px);
+}
+
+.nav-link-active {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  font-weight: 600;
+}
+
+.user-info-desktop {
+  display: none;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .user-info-desktop {
+    display: flex;
+  }
+}
+
+.user-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: rgb(75 85 99);
+}
+
+.role-badge-admin {
+  background-color: rgb(168 85 247);
+  color: white;
+}
+
+.role-badge-farmer {
+  background-color: rgb(34 197 94);
+  color: white;
+}
+
+.role-badge-expert {
+  background-color: rgb(59 130 246);
+  color: white;
+}
+
+.role-badge-public {
+  background-color: rgb(107 114 128);
+  color: white;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logout-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.mobile-menu-button {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  color: rgb(55 65 81);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+.mobile-menu-button:hover {
+  background-color: rgb(240 253 244);
+}
+
+.menu-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav-links-mobile {
+  display: block;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .nav-links-mobile {
+    display: none;
+  }
+}
+
+.nav-link-mobile {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+  color: rgb(55 65 81);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-link-mobile:hover {
+  background-color: rgb(240 253 244);
+}
+
+.nav-link-mobile-active {
+  background-color: rgb(220 252 231);
+  color: rgb(22 101 52);
+}
+
+.user-info-mobile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid rgb(229 231 235);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.logout-button-mobile {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

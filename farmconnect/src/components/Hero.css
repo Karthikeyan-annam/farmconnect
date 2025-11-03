@@ -1,0 +1,354 @@
+.hero-container {
+  min-height: 100vh;
+}
+
+.hero-section {
+  position: relative;
+  background: linear-gradient(to right, rgb(21 128 61), rgb(22 101 52));
+  color: white;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.2;
+}
+
+.hero-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero-content {
+    padding: 6rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    padding: 6rem 2rem;
+  }
+}
+
+.hero-text {
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+.hero-description {
+  margin-bottom: 2rem;
+  color: rgb(220 252 231);
+  font-size: 1.125rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.hero-button-primary {
+  background-color: white;
+  color: rgb(22 101 52);
+}
+
+.hero-button-primary:hover {
+  background-color: rgb(240 253 244);
+}
+
+.hero-button-secondary {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.hero-button-secondary:hover {
+  background-color: white;
+  color: rgb(22 101 52);
+}
+
+.button-icon {
+  margin-left: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.dialog-content {
+  max-width: 42rem;
+}
+
+.role-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .role-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.role-card {
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.role-card:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.role-card-title {
+  text-align: center;
+}
+
+.role-card-description {
+  text-align: center;
+  color: rgb(75 85 99);
+}
+
+.role-card-button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.role-button-green {
+  background-color: rgb(22 163 74);
+}
+
+.role-button-green:hover {
+  background-color: rgb(21 128 61);
+}
+
+.role-button-blue {
+  background-color: rgb(37 99 235);
+}
+
+.role-button-blue:hover {
+  background-color: rgb(29 78 216);
+}
+
+.role-button-purple {
+  background-color: rgb(147 51 234);
+}
+
+.role-button-purple:hover {
+  background-color: rgb(126 34 206);
+}
+
+.dialog-footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.features-section {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .features-section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-section {
+    padding: 4rem 2rem;
+  }
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  color: rgb(22 101 52);
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.section-description {
+  color: rgb(75 85 99);
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-card {
+  transition: box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.feature-icon-wrapper {
+  margin-bottom: 1rem;
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.feature-icon-green {
+  color: rgb(22 163 74);
+}
+
+.feature-icon-blue {
+  color: rgb(37 99 235);
+}
+
+.feature-icon-purple {
+  color: rgb(147 51 234);
+}
+
+.feature-icon-orange {
+  color: rgb(234 88 12);
+}
+
+.stats-section {
+  background-color: rgb(240 253 244);
+  padding: 4rem 0;
+}
+
+.stats-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .stats-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-container {
+    padding: 0 2rem;
+  }
+}
+
+.stats-grid {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  color: rgb(22 101 52);
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: rgb(75 85 99);
+}
+
+.cta-section {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .cta-section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cta-section {
+    padding: 4rem 2rem;
+  }
+}
+
+.cta-card {
+  background: linear-gradient(to right, rgb(22 163 74), rgb(21 128 61));
+  color: white;
+}
+
+.cta-content {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta-title {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.cta-description {
+  color: rgb(220 252 231);
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  background-color: white;
+  color: rgb(22 101 52);
+}
+
+.cta-button:hover {
+  background-color: rgb(240 253 244);
+}
